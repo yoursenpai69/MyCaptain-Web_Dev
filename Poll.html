@@ -1,48 +1,64 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css">
+        <link href="https://fonts.googleapis.com/css?family=M+PLUS+1p" rel="stylesheet">
         <meta charset="utf-8">
         <title>Anime Poll</title>
     </head>
     <body>
         <header>
-            <h1 class="logo">アニメ PORU</h1>
-            <nav>
-                <ul>
-                    <a href="#"><li>Log in</li></a>
-                    <a href="signup.html"><li>Sign up</li></a>
-                    <a href="About.html"><li>About</li></a>
-                    <a href="Top.html"><li>Top</li></a>
-                    <a href="Poll.html"><li>Poll</li></a>
+            <nav calss="topbar">
+                <h1 class="logo">アニメ PORU</h1>
+                <div class="menuicon">
+                    <article class="menubar"></article>
+                    <article class="menubar"></article>
+                    <article class="menubar"></article>
+                </div>
+                <ul class="menu">
+                    <li><a href="main.html">Log in</li></a>
+                    <li><a href="signup.html">Sign up</a></li>
+                    <li><a href="About.html">About</a></li>
+                   <li><a href="Top.html">Top</a></li>
+                    <li><a href="#">Poll</a></li>
                 </ul>
             </nav>
-            <section class="container">
-                VOTE FOR YOUR FAV ANIME!!!
-                <div class="poll">
-                    <label>Anime Name</label><br>
-                    <input type="text"><br>
-                    <label>Rating</label><br>
-                    <input type="number"><br>
-                    <input type="submit" value="VOTE">
-
-                </div>
-            </section>
         </header>
+        <section class="container pollcont">
+            <main class="box">  
+                <h3 class="heading">VOTE FOR YOUR FAV ANIME!!!</h3>
+                <div class="poll">
+                    <label class="inputText">Anime Name</label><br>
+                    <input class="input" type="text"><br>
+                    <label class="inputText">Rating</label><br>
+                    <input class="input" type="number" max="10" min="1"><br>
+                </div>
+                <article class="buttonAlign">
+                    <button class="button" type='submit' id="pollbut">VOTE</button>
+                </article>
+            </main>
+            
+        </section>
+        
         <footer>
-            <h2 class="logo">アニメ PORU</h2>
-            &copy; ALL RIGHTS RESERVED
-            <div class="contact">
-                <ul>
-                    <a href="#"><li>FACEBOOK</li></a>
-                    <a href="https://www.instagram.com/mono.no.aware69/" target="_blank"><li>INSTAGRAM</li></a>
-                    <a href="https://twitter.com/seek_n_snipe" target="_blank"><li>TWITTER</li></a>
-                    <a href = "mailto: vj123chethanavenky@gmail.com" target="_blank"><button type="button">EMAIL</button></a>
-                </ul>
-                <p>
-                    497 Evergreen Rd. Roseville, CA 95673<br>
-                    +44 345 345 342<br>
-                </p>
+            <div class="pack">
+                <h2 class="logo2" id="pollitems">アニメ PORU</h2>    
+                <h3 class="copyright" id="pollitems">&copy; ALL RIGHTS RESERVED</h3>
             </div>
+            <div class="contact" id="pollitems">
+                <ul id="pollitems">
+                    <a href="#"><li  id="pollitems">FACEBOOK</li></a>
+                    <a href="https://www.instagram.com/mono.no.aware69/" target="_blank"><li id="pollitems">INSTAGRAM</li></a>
+                    <a href="https://twitter.com/seek_n_snipe" target="_blank"><li id="pollitems">TWITTER</li></a>
+                    <a href = "mailto: vj123chethanavenky@gmail.com" target="_blank"  id="pollitems"><button class="button" >EMAIL</button></a>
+                </ul>
+            </div>
+            <p id="pollitems">
+                497 Evergreen Rd. Roseville, CA 95673<br>
+                +44 345 345 342<br>
+            </p>
+        
 
 
         </footer>

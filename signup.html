@@ -1,35 +1,48 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css">
+        <link href="https://fonts.googleapis.com/css?family=M+PLUS+1p" rel="stylesheet">
         <meta charset="utf-8">
         <title>Sign up page</title>
     </head>
     <body>
         <header>
-            <h1 class="logo">アニメ PORU</h1>
-            <nav>
-                <ul>
-                    <a href="main.html"><li>Log in</li></a>
-                    <a href="#"><li>Sign up</li></a>
-                    <a href="About.html"><li>About</li></a>
-                    <a href="Top.html"><li>Top</li></a>
-                    <a href="Poll.html"><li>Poll</li></a>
+            <nav calss="topbar">
+                <h1 class="logo">アニメ PORU</h1>
+                <div class="menuicon">
+                    <article class="menubar"></article>
+                    <article class="menubar"></article>
+                    <article class="menubar"></article>
+                </div>
+                <ul class="menu">
+                    <li><a href="main.html">Log in</li></a>
+                    <li><a href="#">Sign up</a></li>
+                    <li><a href="About.html">About</a></li>
+                   <li><a href="Top.html">Top</a></li>
+                    <li><a href="Poll.html">Poll</a></li>
                 </ul>
             </nav>
-            <section class="container">
-                SIGN UP
-                <div class="Account">
-                    <label>E-mail</label><br>
-                    <input type="text"><br>
-                    <label>User name</label><br>
-                    <input type="text"><br>
-                    <label>Password</label><br>
-                    <input type="password"><br>
-                    <input type="submit" value="Sign Up">
-
-                </div>
-            </section>
         </header>
+        <section class="container">
+            <main class="box">
+                <h3 class="heading">SIGN UP</h3>
+                <div class="Account">
+                    <label class="inputText">E-mail</label><br>
+                    <input class="input" type="text"><br>
+                    <label class="inputText">User name</label><br>
+                    <input class="input" type="text"><br>
+                    <label class="inputText">Password</label><br>
+                    <input class="input" type="password"><br>
+                </div>
+                <article class="buttonAlign">
+                    <button class="button" type='submit'>SIGN UP</button>
+                <article class="buttonAlign">
+            </main>        
+                
+        </section>
+        
     </body>
       
 </html>
